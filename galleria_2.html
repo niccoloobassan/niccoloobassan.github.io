@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <title>Santorini</title>
+
+    <style>
+        
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h1, h3 {
+            font-family: 'Baskervville', serif;
+            color: black;
+            text-align: center;
+        }
+
+        .container-fluid, .navbar-brand {
+            font-size: 25px;
+            font-family: 'Baskervville';
+        }
+
+        .para {
+            font-family: 'Comfortaa', cursive;
+            font-size: 19px;
+            color: black;
+            text-align: center;
+            width: 40%;
+        }
+
+        .grassetto {
+            font-family: 'Fjalla One', sans-serif;
+        }
+
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        }
+
+        @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+        }
+
+        .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+        }
+
+        .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+        }
+
+        .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        }
+
+        .bordi {
+        border-radius: 5px 5px 0px 0px;
+        }
+    
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Comfortaa:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');  
+    </style>
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+      <div class="container-fluid">
+        <div class="navbar-brand">Santorini - <img src="images/bandiera-grecia.jpeg" width="80" height="80" alt="Bandiera Grecia"></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+  
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="descrizione.html">Descrizione della cittadina</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="galleria.html">Galleria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tourguidato.html">Prenotazione</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contatti.html">Contatti</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+
+    <br>
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Santorini... Cosa si può visitare?</h1>
+            <p class="lead text-muted">Beh, innanzitutto la nostra isola è importante per le spiagge, una cosa favolosa, ideale per qualsiasi persona/famiglia con bambini! Qui di seguito vi lasciamo delle 
+            foto di alcune spiagge che potete visitare durante il vostro soggiorno. A chi non piace prendere il sole.. ci sono sempre musei e monumenti da visitare.
+            </p>
+            <p>
+            <a href="galleria.html" class="btn btn-secondary my-2">Pagina 1</a>
+            <a href="#" class="btn btn-primary my-2">Pagina 2</a>
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+            <div class="card shadow-sm">
+                <img src="images/oia_galleria.jpeg" alt="Galleria Oia" class="img-fluid bordi">
+
+                <div class="card-body">
+                <p class="card-text" id="continue">Oia è una cittadina di rara bellezza. Si trova nell’estrema punta a nord-ovest dell’isola di Santorini, sul bordo delle altissime scogliere della costa </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="oia()">Mostra Altro</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiOia()">Riduci</button>
+                    </div>
+                    <small class="text-muted">10°Posto</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="col">
+            <div class="card shadow-sm">
+                <img src="images/red-beach.jpeg" alt="Spiaggia Rossa" class="img-fluid bordi">  
+
+                <div class="card-body">
+                <p class="card-text"  id="continue2">La Red Beach (spiaggia rossa) di Santorini è senza dubbio una delle spiagge più incredibili di tutta la Grecia. 
+                    Non si può partire senza averla visitata, perchè è un’esperienza… Interplanetaria! 
+                    Come fare un salto su Marte, la Red Beach è un trovarsi 
+
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="redBeach()">Mostra Altro</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiRedBeach()">Riduci</button>
+                    </div>
+                    <small class="text-muted">11°Posto</small>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/cattedrale-candelora.jpeg" alt="Cattedrale di Candelora" class="img-fluid bordi">  
+
+                    <div class="card-body">
+                    <p class="card-text"  id="continue3">La cattedrale della Presentazione di Cristo è la cattedrale metropolitana ortodossa di Fira, nella nostra isola di Santorini, e sede della 
+                        metropolia 
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="cattedrale()">Mostra Altro</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiCattedrale()">Riduci</button>
+                        </div>
+                        <small class="text-muted">12°Posto</small>
+                    </div>
+                    </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/artgallery.jpeg" alt="Art Gallery" class="img-fluid bordi">  
+
+                    <div class="card-body">
+                    <p class="card-text"  id="continue4">Situata nella caldera di Santorini a Oia e fondata nel 2010, la Oia Treasures Art Gallery è rapidamente diventata uno dei principali spazi d'arte 
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="artGallery()">Mostra Altro</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiArtGallery()">Riduci</button>
+                        </div>
+                        <small class="text-muted">13°Posto</small>
+                    </div>
+                    </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/cave-pool.webp" alt="Cave Pool SPA" class="img-fluid bordi">  
+
+                    <div class="card-body">
+                    <p class="card-text"  id="continue5">Oppure per avere un bel meritato relax in una SPA, si può scegliere la 'Cave Santorini SPA', è stata creata in un'esclusiva residenza di campagna di 500 
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="cave()">Mostra Altro</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiCave()">Riduci</button>
+                        </div>
+                        <small class="text-muted">14°Posto</small>
+                    </div>
+                    </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/cabinovia.jpeg" alt="Cabinovia Santorini" class="img-fluid bordi">  
+
+                    <div class="card-body">
+                    <p class="card-text"  id="continue6">La teleferica di Santorini è una cabinovia che collega il porto con la città di Fira (situata a 220m s.l.m.), sull'isola di Santorini in Grecia. 
+                        La teleferica venne 
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="cabinovia()">Mostra Altro</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiCabinovia()">Riduci</button>
+                        </div>
+                        <small class="text-muted">15°Posto</small>
+                    </div>
+                    </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/akrotiri.jpeg" alt="Akrotiri" class="img-fluid bordi">  
+
+                    <div class="card-body">
+                    <p class="card-text"  id="continue7">Akrotiri era un'antica città portuale risalente all'Età del Bronzo situata a sud nell'antica isola di Thera, oggi Santorini. Distrutta e sepolta dall'eruzione del vulcano di Santorini
+                        nel 1628 a.C., è tornata alla luce 
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="akrotiri()">Mostra Altro</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiAkrotiri()">Riduci</button>
+                        </div>
+                        <small class="text-muted">16°Posto</small>
+                    </div>
+                    </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/wine-museum.jpeg" alt="Museo del Vino" class="img-fluid bordi">  
+
+                    <div class="card-body">
+                    <p class="card-text"  id="continue8">Situato nella bellissima Santorini, il Museo del vino di Koutsogiannopoulos ha tutto ciò che un visitatore vorrebbe sapere sulla vinificazione in uno dei luoghi più unici al mondo. 
+                        Con la conoscenza della famiglia Koutsogiannopoulos e le mostre storiche, gli ospiti 
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="wineMuseum()">Mostra Altro</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiWineMuseum()">Riduci</button>
+                        </div>
+                        <small class="text-muted">17°Posto</small>
+                    </div>
+                    </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/vlychada2.webp" alt="Spiaggia di Vlychada" class="img-fluid bordi">  
+
+                    <div class="card-body">
+                    <p class="card-text"  id="continue9">Situata a sud di Santorini, nelle vicinanze di un piccolo porto turistico, Vlychada è il luogo ideale per chi desidera vivere il mare evitando la folla. 
+                        Il 
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="Vlychada()">Mostra Altro</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiVlychada()">Riduci</button>
+                        </div>
+                        <small class="text-muted">18°Posto</small>
+                    </div>
+                    </div>
+            </div>
+            </div>
+
+
+        </div>
+        </div>
+    </div>
+
+    <center>
+        <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <a href="galleria.html" class="btn btn-secondary my-2">Pagina 1</a>
+            <a href="#" class="btn btn-primary my-2">Pagina 2</a>
+        </div>
+        </div>
+    </center>
+  
+    <div class="container">
+        <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="descrizione.html" class="nav-link px-2 text-muted">Descrizione della cittadina</a></li>
+            <li class="nav-item"><a href="galleria.html" class="nav-link px-2 text-muted">Galleria</a></li>
+            <li class="nav-item"><a href="tourguidato.html" class="nav-link px-2 text-muted">Prenotazione</a></li>
+            <li class="nav-item"><a href="contatti.html" class="nav-link px-2 text-muted">Contatti</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy;  2022 Bassan Niccolò</p>
+        </footer>
+    </div>
+
+    <script>
+        
+        function oia() {
+        document.getElementById('continue').innerHTML = "Oia è una cittadina di rara bellezza. Si trova nell’estrema punta a nord-ovest dell’isola di Santorini, sul bordo delle altissime scogliere della costa occidentale. Colori e forme dell’architettura cicladica creano uno scenario vivace e affascinante: le casette piene di fiori, le chiese con le splendenti cupole blu e i mulini a vento sembrano essere usciti dalla tela di un pittore, intento a dipingere il suo borgo ideale. Il motivo principale per visitare Oia è il suo magico tramonto, ma questa deliziosa cittadina offre molto altro. L’architettura tradizionale di Oia annovera due tipologie di case: le kapetanospita, le case dei capitani e le iposkafa, le case-grotta.";
+        }
+
+        function nascondiOia() {
+            document.getElementById('continue').innerHTML = 'Oia è una cittadina di rara bellezza. Si trova nell’estrema punta a nord-ovest dell’isola di Santorini, sul bordo delle altissime scogliere della costa';
+        }
+
+        function redBeach() {
+        document.getElementById('continue2').innerHTML = "La Red Beach (spiaggia rossa) di Santorini è senza dubbio una delle spiagge più incredibili di tutta la Grecia. Non si può partire senza averla visitata, perchè è un’esperienza… Interplanetaria! Come fare un salto su Marte, la Red Beach è un trovarsi catapultati nel pianeta rosso, all'improvviso. I colori abituali spariscono senza darci il tempo di realizzare la nuova dimensione. Immaginate la scena. In un robotico automatismo, si parcheggia la macchina e infilate le chiavi nella tasca dei pantaloni, si comincia a camminare. Poi si svolta un angolo e… Zacchete. L’angolo ci lascia dietro di sé il mondo a cui siamo abituati, ora è tutto rosso, terra, roccia, lava, sentiero.";
+        }
+
+        function nascondiRedBeach() {
+            document.getElementById('continue2').innerHTML = 'La Red Beach (spiaggia rossa) di Santorini è senza dubbio una delle spiagge più incredibili di tutta la Grecia. Non si può partire senza averla visitata, perchè è un’esperienza… Interplanetaria! Come fare un salto su Marte, la Red Beach è un trovarsi ';
+        }
+
+        function cattedrale() {
+        document.getElementById('continue3').innerHTML = "La cattedrale della Presentazione di Cristo è la cattedrale metropolitana ortodossa di Fira, nella nostra isola di Santorini, e sede della metropolia di Théra, Amorgo e delle isole. Situata nel centro della città, venne costruita nel 1827. Con il terremoto del 1956 la chiesa crollò ma venne successivamente ricostruita. Lo spazio interno, di dimensioni piuttosto ridotte, presenta affreschi realizzati dal pittore Cristoforos Asimis, caratterizzati da tenui colorazioni dorate e da icone di fine pittura. Sul lato destro sono custoditi, in una teca, gli abiti dei sacerdoti, di varia foggia e colori.";
+        }
+
+        function nascondiCattedrale() {
+            document.getElementById('continue3').innerHTML = 'La cattedrale della Presentazione di Cristo è la cattedrale metropolitana ortodossa di Fira, nella nostra isola di Santorini, e sede della metropolia ';
+        }
+
+        function artGallery() {
+        document.getElementById('continue4').innerHTML = "Situata nella caldera di Santorini a Oia e fondata nel 2010, la Oia Treasures Art Gallery è rapidamente diventata uno dei principali spazi d'arte contemporanea della Grecia. Nei suoi spazi intrecciati di alto interesse architettonico, il visitatore ha l'opportunità di conoscere il lavoro di nomi di spicco nel mondo dell'arte contemporanea greca, così come il lavoro di nuovi artisti in rapido sviluppo. Il visitatore può ottenere sculture, dipinti e gioielli che meglio si adattano a musei o collezioni private, così come l'arte che si adatta a tutte le valigie.";
+        }
+
+        function nascondiArtGallery() {
+            document.getElementById('continue4').innerHTML = "Situata nella caldera di Santorini a Oia e fondata nel 2010, la Oia Treasures Art Gallery è rapidamente diventata uno dei principali spazi d'arte";
+        }
+
+        function cave() {
+        document.getElementById('continue5').innerHTML = "Oppure per avere un bel meritato relax in una SPA, si può scegliere la 'Cave Santorini SPA', è stata creata in un'esclusiva residenza di campagna di 500 anni (katikia in greco), con temperature costanti di 17°C tutto l'anno. In quella grotta sono cresciute ben 5 generazioni. Tra cui Petros e Maria, i proprietari, che hanno deciso di trasformare la loro casa in un luogo di benessere. Petros inizialmente ha lavorato come guida turistica, poi ha deciso di aprire la sua grotta per ospitare i turisti che volevano vivere un'esperienza unica. Ora la grotta è diventata una SPA, dove si possono fare massaggi, trattamenti di bellezza e anche cenare. Offre anche una piscina all'aperto, con acqua termale, e una piscina interna, con acqua a 34°C. Che ne dici di andare a farci un salto?";
+        }
+
+        function nascondiCave() {
+            document.getElementById('continue5').innerHTML = "Oppure per avere un bel meritato relax in una SPA, si può scegliere la 'Cave Santorini SPA', è stata creata in un'esclusiva residenza di campagna di 500";
+        }
+
+        function cabinovia() {
+        document.getElementById('continue6').innerHTML = "La teleferica di Santorini è una cabinovia che collega il porto con la città di Fira (situata a 220m s.l.m.), sull'isola di Santorini in Grecia. La teleferica venne costruita nel 1979 dall'armatore greco Evangelos Nomikos, che tramite la propria Fondazione Loula & Evangelos Nomikos la donò alle 14 comunità dell'isola di Santorini. La cabinovia venne realizzata dall'azienda Doppelmayr e ha una capacità di trasporto di 1.200 persone all'ora (600 passeggeri per tratta). Il servizio è operato con due grappoli composti da 6 cabine ciascuno, con modalità 'va e vieni', non essendoci il girostazione. Il tempo di percorrenza è di 3 minuti.";
+        }
+
+        function nascondiCabinovia() {
+            document.getElementById('continue6').innerHTML = "La teleferica di Santorini è una cabinovia che collega il porto con la città di Fira (situata a 220m s.l.m.), sull'isola di Santorini in Grecia. La teleferica venne ";
+        }
+
+        function akrotiri() {
+        document.getElementById('continue7').innerHTML = "Akrotiri era un'antica città portuale risalente all'Età del Bronzo situata a sud nell'antica isola di Thera, oggi Santorini. Distrutta e sepolta dall'eruzione del vulcano di Santorini nel 1628 a.C., è tornata alla luce nel 1967 grazie agli scavi voluti dall'archeologo Spyridon Marinatos. Proprio a casa del deposito delle ceneri vulcaniche sulla città si sono conservati edifici, affreschi e ceramiche, motivo per cui viene anche chiamata la 'Pompei dell'Egeo'. Secondo alcuni studiosi di varie epoche è stata interpretata come la città di Atlantide, protagonista del celebre mito di Platone. Nella parte sud dell'isola di Santorini, nel mar Egeo, è situato il moderno paese di Akrotiri, il cui nome significa promontorio. L'antico villaggio di Akrotiri si trovava in un'area più pianeggiante e bassa rispetto a quello moderno, non lontano dal mare. Grazie alla baia sicura dove sorgeva, era molto sviluppato nelle attività marittime. Tra tutti i villaggi di Thera, Akrotiri era anche il più avvantaggiato perchè la parte sud di Thera, prima dell'eruzione del 1628 a.C., era più pianeggiante rispetto alla parte a nord ed era anche più adatta all'agricoltura, perchè protetta dai venti nordici e forse soggetta a maggiori precipitazioni.";
+        }
+
+        function nascondiAkrotiri() {
+            document.getElementById('continue7').innerHTML = "Akrotiri era un'antica città portuale risalente all'Età del Bronzo situata a sud nell'antica isola di Thera, oggi Santorini. Distrutta e sepolta dall'eruzione del vulcano di Santorini nel 1628 a.C., è tornata alla luce ";
+        }
+
+        function wineMuseum() {
+        document.getElementById('continue8').innerHTML = "Situato nella bellissima Santorini, il Museo del vino di Koutsogiannopoulos ha tutto ciò che un visitatore vorrebbe sapere sulla vinificazione in uno dei luoghi più unici al mondo. Con la conoscenza della famiglia Koutsogiannopoulos e le mostre storiche, gli ospiti potranno avere un'idea di com'era la vita qui come viticoltore. Questo museo unico nel suo genere si trova in una grotta e, per la sua posizione unica, questo labirinto naturale si trova a otto metri sotto terra e lungo 300 metri. La nostra famiglia ha impiegato ventuno anni di duro lavoro, pazienza e perseveranza per completare il museo del vino in questo luogo straordinario, ma ne è valsa la pena.";
+        }
+
+        function nascondiWineMuseum() {
+            document.getElementById('continue8').innerHTML = "Situato nella bellissima Santorini, il Museo del vino di Koutsogiannopoulos ha tutto ciò che un visitatore vorrebbe sapere sulla vinificazione in uno dei luoghi più unici al mondo. Con la conoscenza della famiglia Koutsogiannopoulos e le mostre storiche, gli ospiti ";
+        }
+
+        function Vlychada() {
+        document.getElementById('continue9').innerHTML = "Situata a sud di Santorini, nelle vicinanze di un piccolo porto turistico, Vlychada è il luogo ideale per chi desidera vivere il mare evitando la folla. Il contrasto tra la sabbia nera e le scogliere bianche sullo sfondo creano un effetto 'sale e pepe' che conferisce a questo tratto di costa di circa 750 metri un aspetto quasi lunare. All'estremità meridionale della spiaggia si trova il villaggio di Vlychada, dove troverai un eclettico mix di attrazioni, tra cui ristoranti, gallerie d'arte e una storica fabbrica di pomodori oggi trasformata nel Museo Industriale del Pomodoro. Lontana dalle folle di turisti di Fira, non servita dai trasporti pubblici e con pochi hotel disponibili, Vlychada è la spiaggia adatta a chi desidera assaporare un'atmosfera più autentica.";
+        }
+
+        function nascondiVlychada() {
+            document.getElementById('continue9').innerHTML = "Situata a sud di Santorini, nelle vicinanze di un piccolo porto turistico, Vlychada è il luogo ideale per chi desidera vivere il mare evitando la folla. Il ";
+        }
+
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>
