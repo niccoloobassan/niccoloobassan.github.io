@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAHbUlEQVR4nO2cW2wUVRjH/9/sttCdKpRLuYlAgBitCgKRIKHdItcWCwWWF0WjhvpiVPRBjReeTDDxAiQ+iBce8KmlrTV0CzSypSpIAG8IUaN4AYOAsUiZs71s5/MBqgSBOTNzZnfZmd9Lk+Y73/ft958zZ+acMwcICAgICAgICAgICPAblOkErkU0lig0U8m7icwSmNpkwJwIovEAIgAGASgEwADOAzh78e8pAo4x0zEtZH7dpYUP7Ktb9FfmfsW1ySoBYrHa0JnegjlMWhUYc0CYCiCswPX3TNwaAnZ0hcTufXWrkgp8KiErBBBCzKy4P/EwA9UAij0Odw6EBmba2t64OAEQexzvmmRMAGbWhBCVAJ4AMK/igbZMpHEUzBt78sTWTPWKtAvAzGEhRA2A5wHc1P//DAnQz2kGv6F3aRtaWiq60xlYS2ewzs7OciHEIQBv4ZLiZwHFBFovBvLhaHXzonQGTosAs6uaRhuGUa9p2m4Ad6YjpkMmM9BSVr297p7qnV6PRQDSIEBZdfP8cCh8CMByr2Opg1bmIfVteXXzUq8jqXjEuyLRaCKMIeJFZryENN7q4h9EVbkaDuBD5vObdF1/moj6VDm+FE8KE40lCrlIxJmxzqsY6YKInhBCbO/o6BjshX/lxYnGmkdySnwCYL5q3xlkUX5+/qeGYYxS7VipANGqHZM4hX0Apqr0myWUAPgsmUxOUOlUmQCzq5pGc6ivFcB4VT6zkAmmaX4shBiryqESAWYujt8YDoWbkdvF72cCM+9QNSa4FqAkVps/YCB/hNy87VyN2wYMGNDIzPluHbkWYFhKX09AmVs/1xvMHBVCvObWjysBypbFFwN4ym0S1zGPG4bh6mXNsQD3VjWNAPEWZMmUdoYgAFuSyeTNbhw4wjCMBlyYv88qMjSr2rCnsXKFk4aOekBnZ+dcZGHxM8jy0mXxBU4a2haAmUOapm1wEiyXIeI3o9GE7bk12wIIIR4DcIfddj7gNh6cXGO3kS0BmDkM4Dm7QXwD8QvTaw7m2WliS4BkMhkDoOw1PAcZo/952ta6h90e8KS9fPwHMWzVSFoAwzBmAJhpOyPfwbPKlzZL10l61K5YvWcN2PkWGquVKlXP7wpXxNzwqK5jv4yhVA+IxWpDYF7mLidfsVJ2ok5KgNN9kVJ4v2MtlygyDENqglJuDGC6z1U6PkTTNKk3Y9lBuNRFLr6EmRfK2FkKsGDBTh3AFNcZ+Y/bZVbNLAXo0vtmwsP9QzkMhcPhaVZGlgIQ+HY1+fgPIrrLykZmDJioIBdfQkSTrGysBWC2dBJwVSwvXut7O2GcklTSRIa/M7ickVYGEj2AblCSij+xrJ21AIRCJan4EuuLV2YQDgRwDCsRIMBDJASgTu/TyFWsaychAAcCOMa6djK3oEAA51jWznJnnGEYu5BbX7ukk1Zd1685LS3TA44pSsaP/GRlYCkAM1s6CbgyzPyjlY1MD/hSQS6+hJm/sLKxFKCnp+cALpzJE2APTqVSlhevpQBDhgz5G8ARJSn5i8NFRUVnrYyk3oSZudV9Pv6CiHbJ2MlORexwkYsvMU1zp4yd1BcyzJwnhDgJYKirrPzDn5FIZBQRpawMpXoAEfUCaHCdln+olyk+YGO3Q+WDbZvZhO0PEPyIZmKLtK2sYVt95UEAnzvKyE8Q9iaaKqU25gI21wMIvNF+Rv6CTdiqkb0FmQ59G4Djttr4ixNG8YhGOw1sCdDWVp4C8Xp7OfkHAl45tHlGr502tpcki0PibQDf2G2X+/ARdETetdvKtgB1dav6GLTWbrvch9a2tZVLPXpeiqNF+fbGit0I3gv+hQn1exorHU3XOD4rQggxhpm/AjDMqY8coUPTtKkFBQW/OWnseFtKJBL5HcBD8PdUNQN42GnxAZf7gnRdj+PCMcS+hJk36bre5MaH67N+Lk7UNcNnC/dElCgoKFhERD1u/LjeGUdEvV1dXSsBfO3W13XEke7u7uVuiw8oPO1KCDGWmfcAUHquZhZyjIjKIpHICRXOlO0NjUQixwHMBnBUlc9sg4i+V1l8QPHmXF3XTwKYh9xcQz5smmZUZfEBD3ZH67p+UggxC4Crp4Mso6Wnp6e0sLDwD9WOPTvxkJlJCLEOwMtexvGai4+aa4nI9MK/54UpX7F9oWlq7wM82utYijmtATWJxkpPe7LnH2gk6pfspFTfFIC3eR1LHVRHKbPE6+IDab41lFbH515cVcvWj79/YE1b216/OJ6ugGm/N0+vOZinnzlVQ8CzyJbz5xi/QeNXzw8b+Y7dBRW3ZGxwLInV5g/tjawmomcA3JqhNI4y6HVjePHWdBe+n6x4OilfHp9tsvkIQDFIfFvrknMAb2MT77U3LdnrcSxLskKAfkpitfnDUnoZgCW4MLl3C9w/KJgAviOgFRpvP6OJ9iN1q1zP4agiqwS4nHmx1kF9vakZJpnTQDwBTOMBjANwIwAd//WWTgAGgHNg/gUafgXTzww61N2Fg/tbKs5l6CcEBAQEBAQEBAQEBAT8j38ARyJQX3qdn9UAAAAASUVORK5CYII=" type="image/x-icon">
+    <title>Santorini</title>
+
+    <style>
+        .bg1{
+            background-image: url("images/939104.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-position: left center;
+        }
+
+        body {
+            /*background-image: url("images/939104.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            */
+            font-family: 'Baskervville';
+            font-size: 22px;
+            padding-bottom: 20px;
+        } 
+
+        h1 {
+            font-family: 'Baskervville';
+            font-size: 80px;
+            color: white;
+            text-align: right;
+            position: relative;
+            right: 550px;
+        } 
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .altosx {
+            font-size: 200%;
+        }
+
+        .altodx {
+            font-size: 110%;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>  
+    <div class="bg1"></div>
+
+    <nav class="navbar bg-gradient navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><div class="altosx text text-white" style="text-shadow: 5px 5px 8px rgb(0, 0, 0); font-family: 'Baskervville';">Santorini</div></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas altodx offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h4 class="offcanvas-title" id="offcanvasNavbarLabel">La città di Santorini</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><font style="text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.629); font-family: 'Baskervville';">Home</font></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="descrizione.html"><font style="text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.629); font-family: 'Baskervville';">Descrizione cittadina</font></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galleria.html"><font style="text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.629); font-family: 'Baskervville';">Galleria</font></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tourguidato.html"><font style="text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.629); font-family: 'Baskervville';">Prenotazione Tour</font></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contatti.html"><font style="text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.629); font-family: 'Baskervville';">Contatti</font></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body> 
+</html>
