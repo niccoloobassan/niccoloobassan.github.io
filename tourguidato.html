@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Santorini</title>
+
+    <style>
+        
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h1, h3 {
+            font-family: 'Baskervville', serif;
+            color: black;
+            text-align: center;
+        }
+
+        .container-fluid, .navbar-brand {
+            font-size: 25px;
+            font-family: 'Baskervville';
+        }
+
+        .para {
+            font-family: 'Comfortaa', cursive;
+            font-size: 19px;
+            color: black;
+            text-align: center;
+            width: 40%;
+        }
+
+        .grassetto {
+            font-family: 'Fjalla One', sans-serif;
+        }
+
+        .container2 {
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Baskervville';
+        }
+
+        .container3 {
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Comfortaa', cursive;
+        }
+
+        .list-group {
+        max-width: 460px;
+        margin: 4rem auto;
+        }
+
+        .form-check-input:checked + .form-checked-content {
+        opacity: .5;
+        }
+
+        .form-check-input-placeholder {
+        border-style: dashed;
+        }
+        [contenteditable]:focus {
+        outline: 0;
+        }
+
+        .list-group-checkable .list-group-item {
+        cursor: pointer;
+        }
+        .list-group-item-check {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        }
+        .list-group-item-check:hover + .list-group-item {
+        background-color: var(--bs-light);
+        }
+        .list-group-item-check:checked + .list-group-item {
+        color: #fff;
+        background-color: var(--bs-blue);
+        }
+        .list-group-item-check[disabled] + .list-group-item,
+        .list-group-item-check:disabled + .list-group-item {
+        pointer-events: none;
+        filter: none;
+        opacity: .5;
+        }
+
+        .list-group-radio .list-group-item {
+        cursor: pointer;
+        border-radius: .5rem;
+        }
+        .list-group-radio .form-check-input {
+        z-index: 2;
+        margin-top: -.5em;
+        }
+        .list-group-radio .list-group-item:hover,
+        .list-group-radio .list-group-item:focus {
+        background-color: var(--bs-light);
+        }
+
+        .list-group-radio .form-check-input:checked + .list-group-item {
+        background-color: var(--bs-body);
+        border-color: var(--bs-blue);
+        box-shadow: 0 0 0 2px var(--bs-blue);
+        }
+        .list-group-radio .form-check-input[disabled] + .list-group-item,
+        .list-group-radio .form-check-input:disabled + .list-group-item {
+        pointer-events: none;
+        filter: none;
+        opacity: .5;
+        }
+
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .div1 {
+            margin-top: -110px;
+            
+        }
+
+        .prova {
+            margin-top: 106px;
+        }
+
+        .prova2 {
+            margin-top: 30px;
+        }
+
+        /* .-----.-. -..-.-.-   */
+
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+
+        .b-example-divider {
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .container {
+          max-width: 960px;
+        }
+
+        .divUltimiForm {
+          margin-top: -30px;
+        }
+
+        .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+          background-color: #333;
+          color: #fff;
+          border-radius: 50%;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .scroll-to-top:hover {
+          background-color: #555;
+        }
+
+        .scroll-to-top i {
+          font-size: 20px;
+        }
+
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Comfortaa:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');  
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+    </style>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top" aria-label="Sixth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Santorini - <img src="images/bandiera-grecia.jpeg" width="80" height="80" alt="Bandiera Grecia"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample06">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="descrizione.html">Descrizione della cittadina</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galleria.html">Galleria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Prenotazione</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contatti.html">Contatti</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+
+    <br><br>
+
+    <div class="prova">
+      <h1>Vuoi vivere un fantastico e indimenticabile tour nella nostra città di Santorini?</h1>
+      <br>
+      <h3>Scegli quale ti appassiona di più, e inserisci i tuoi dati, verrai ricontattato nel più breve tempo possibile!</h3>
+      <br><br>
+    </div>
+
+   
+      <div class="container2">
+          Seleziona il tour che ti interessa: (<font style="color: red;">*</font>) 
+      </div>
+      <div class="list-group w-auto prova2">
+          <label class="list-group-item d-flex gap-3">
+            <input class="form-check-input flex-shrink-0" id="tour1" type="checkbox" value="" style="font-size: 1.375em;">
+            <span class="pt-1 form-checked-content">
+              <strong>Tour con catamarano + cena</strong>
+              <small class="d-block text-muted">
+                <i class="bi-alarm"></i>
+                12:00-22:00
+              </small>
+            </span>
+          </label>
+          <label class="list-group-item d-flex gap-3">
+            <input class="form-check-input flex-shrink-0" id="tour2"  type="checkbox" value="" style="font-size: 1.375em;">
+            <span class="pt-1 form-checked-content">
+              <strong>Tour a cavallo dei paesaggi vulcanici</strong>
+              <small class="d-block text-muted">
+                <i class="bi-alarm"></i>
+                10:00-12:30
+              </small>
+            </span>
+          </label>
+          <label class="list-group-item d-flex gap-3">
+            <input class="form-check-input flex-shrink-0" id="tour3" type="checkbox" value="" style="font-size: 1.375em;">
+            <span class="pt-1 form-checked-content">
+              <strong>Tour con aperi-cena al tramonto con ritiro e guida</strong>
+              <small class="d-block text-muted">
+                <i class="bi-alarm"></i>
+                17:00-21:00
+              </small>
+            </span>
+          </label>
+          <label class="list-group-item d-flex gap-3">
+              <input class="form-check-input flex-shrink-0" id="tour4" type="checkbox" value="" style="font-size: 1.375em;">
+              <span class="pt-1 form-checked-content">
+                <strong>Tour in kayak con grotte e picnic</strong>
+                <small class="d-block text-muted">
+                  <i class="bi-alarm"></i>
+                  09:00-13:00
+                </small>
+              </span>
+          </label>
+          <label class="list-group-item d-flex gap-3">
+              <input class="form-check-input flex-shrink-0" id="tour5" type="checkbox" value="" style="font-size: 1.375em;">
+              <span class="pt-1 form-checked-content">
+                <strong>Tour in quad</strong>
+                <small class="d-block text-muted">
+                  <i class="bi-alarm"></i>
+                  14:00-18:00
+                </small>
+              </span>
+          </label>
+          <label class="list-group-item d-flex gap-3">
+              <input class="form-check-input flex-shrink-0" id="tour6" type="checkbox" value="" style="font-size: 1.375em;">
+              <span class="pt-1 form-checked-content">
+                <strong>Servizio fotografico di abiti volanti con noleggio incluso</strong>
+                <small class="d-block text-muted">
+                  <i class="bi-alarm"></i>
+                  16:00-17:45
+                </small>
+              </span>
+          </label>
+          <label class="list-group-item d-flex gap-3">
+              <input class="form-check-input flex-shrink-0" id="tour7" type="checkbox" value="" style="font-size: 1.375em;">
+              <span class="pt-1 form-checked-content">
+                <strong>Tour guidato a piedi della città Preistorica di Akrotiri</strong>
+                <small class="d-block text-muted">
+                  <i class="bi-alarm"></i>
+                  11:00-13:45
+                </small>
+              </span>
+          </label>
+      </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container2 div1">        
+          
+          <button type="button" class="btn btn-outline-dark" id="aggiornaCarre" onclick="aggiornaCarrello()">Aggiorna carrello</button>
+          
+          <br>
+          <br>
+
+          <br>
+          Inserisci la data in cui vorresti fare il tour: <br> <input type="date" name="Data"><br><br>
+          <center>
+            <div class="container divUltimiForm">
+              <main>
+                <div class="py-5 text-center">
+                  <h2>Pagamento</h2>
+                  <p class="lead">Compila con i tuoi dati sottostanti per completare la prenotazione del tour.</p>
+                </div>
+            
+                <div class="row g-5">
+                  <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                      <span class="text-primary">Il tuo carrello</span>
+                      <span class="badge bg-primary rounded-pill"><font style="font-family: 'Segoe UI';"><p id="carrelloNum">0</p></font></span>
+                    </h4>
+                    <div class="carrelloTour">
+                    <ul class="list-group mb-3">
+                      <li class="list-group-item d-flex justify-content-between">
+                        <span>Totale (EUR)</span>
+                        <strong><font style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><p id="tota" class="tota">€ 0</p></font></strong>
+                      </li>
+                    </ul>
+                    </div>
+            
+                    <form class="card p-2">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Codice promo">
+                        <button type="submit" class="btn btn-secondary">Invia</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Indirizzo di Fatturazione</h4>
+                    <form class="needs-validation" novalidate="" action="confermaprenotazione.html" onsubmit="return checkDatiPersonali()">
+                      <div class="row g-3">
+                        <div class="col-sm-6">
+                          <label for="firstName" class="form-label">Nome (<font style="color: red;">*</font>)</label>
+                          <input type="text" class="form-control" id="firstName" placeholder="Mario" value="" required="">
+                          <div class="invalid-feedback">
+                            È richiesto un nome valido.
+                          </div>
+                        </div>
+            
+                        <div class="col-sm-6">
+                          <label for="lastName" class="form-label">Cognome (<font style="color: red;">*</font>)</label>
+                          <input type="text" class="form-control" id="lastName" placeholder="Rossi" value="" required="">
+                          <div class="invalid-feedback">
+                            È richiesto un cognome valido.
+                          </div>
+                        </div>
+            
+                        <div class="col-12">
+                          <label for="username" class="form-label">Username (<font style="color: red;">*</font>)</label>
+                          <div class="input-group has-validation">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                          <div class="invalid-feedback">
+                              È richiesto il tuo username.
+                          </div>
+                          </div>
+                        </div>
+            
+                        <div class="col-12">
+                          <label for="email" class="form-label">Email (<font style="color: red;">*</font>)</label>
+                          <input type="email" class="form-control" id="email" placeholder="nome@esempio.com" required="">
+                          <div class="invalid-feedback">
+                            Per favore, inserisci la tua email per confermare la prenotazione.
+                          </div>
+                        </div>
+
+                        <div class="col-12">
+                          <label for="telefono" class="form-label">Telefono (<font style="color: red;">*</font>)</label>
+                          <input type="telefono" class="form-control" id="telefono" placeholder="+39 123 4567890" required="">
+                          <div class="invalid-feedback">
+                            Per favore, inserisci il tuo numero di telefono per confermare la prenotazione.
+                          </div>
+                        </div>
+            
+                        <div class="col-12">
+                          <label for="address" class="form-label">Indirizzo (<font style="color: red;">*</font>)</label>
+                          <input type="text" class="form-control" id="address" placeholder="Via Roma 52/A" required="">
+                          <div class="invalid-feedback">
+                            Per favore, inserisci il tuo indirizzo.
+                          </div>
+                        </div>
+            
+                        <div class="col-12">
+                          <label for="address2" class="form-label">Indirizzo 2 <span class="text-muted">(Optional)</span></label>
+                          <input type="text" class="form-control" id="address2" placeholder="Appartamento 412 o Campanello Rossi">
+                        </div>
+            
+                        <div class="col-md-5">
+                          <label for="country" class="form-label">Città (<font style="color: red;">*</font>)</label>
+                          <select class="form-select" id="country" required="">
+                            <option value="">Scegli...</option>
+                            <option>Padova</option>
+                            <option>Verona</option>
+                            <option>Vicenza</option>
+                            <option>Venezia</option>
+                            <option>Rovigo</option>
+                            <option>Belluno</option>
+                            <option>Treviso</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Inserisci una città valida.
+                          </div>
+                        </div>
+            
+                        <div class="col-md-4">
+                          <label for="state" class="form-label">Stato (<font style="color: red;">*</font>)</label>
+                          <select class="form-select" id="state" required="">
+                            <option value="">Choose...</option>
+                            <option>Italia</option>
+                            <option>Francia</option>
+                            <option>Spagna</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Inserisci uno stato valido.
+                          </div>
+                        </div>
+            
+                        <div class="col-md-3">
+                          <label for="zip" class="form-label">CAP (<font style="color: red;">*</font>)</label>
+                          <input type="text" class="form-control" id="zip" placeholder="" required="">
+                          <div class="invalid-feedback">
+                            Inserisci il codice postale.
+                          </div>
+                        </div>
+                      </div>
+            
+                      <hr class="my-4">
+            
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="same-address">
+                        <label class="form-check-label" for="same-address">L'indirizzo di spedizione è lo stesso del mio indirizzo di fatturazione</label>
+                      </div>
+            
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="save-info">
+                        <label class="form-check-label" for="save-info">Salva queste informazioni per la prossima volta</label>
+                      </div>
+            
+                      <hr class="my-4">
+            
+                      <h4 class="mb-3">Metodo di Pagamento</h4>
+            
+                      <div class="my-3">
+                        <div class="form-check">
+                          <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                          <label class="form-check-label" for="credit">Carta di credito</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                          <label class="form-check-label" for="debit">Carta di debito</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                          <label class="form-check-label" for="paypal">PayPal</label>
+                        </div>
+                      </div>
+            
+                      <div class="row gy-3">
+                        <div class="col-md-6">
+                          <label for="cc-name" class="form-label">Nome sulla carta (<font style="color: red;">*</font>)</label>
+                          <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                          <small class="text-muted">Nome completo visualizzato sulla carta</small>
+                          <div class="invalid-feedback">
+                            Inserisci il nome riportato sulla carta.
+                          </div>
+                        </div>
+            
+                        <div class="col-md-6">
+                          <label for="cc-number" class="form-label">Numero della carta (<font style="color: red;">*</font>)</label>
+                          <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                          <div class="invalid-feedback">
+                            Inserisci il numero della carta.
+                          </div>
+                        </div>
+            
+                        <div class="col-md-3">
+                          <label for="cc-expiration" class="form-label">Scadenza (<font style="color: red;">*</font>)</label>
+                          <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                          <div class="invalid-feedback">
+                            Inserisci la data di scadenza della carta.
+                          </div>
+                        </div>
+            
+                        <div class="col-md-3">
+                          <label for="cc-cvv" class="form-label">CVV (<font style="color: red;">*</font>)</label>
+                          <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                          <div class="invalid-feedback">
+                            Codice di sicurezza richiesto.
+                          </div>
+                        </div>
+                      </div>
+            
+                      <hr class="my-4">
+            
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Consenso per il trattamento dei dati personali (<font style="color: red;">*</font>)
+                          </label>
+                          <div class="invalid-feedback">
+                            Devi accettare prima di procedere.
+                          </div>
+                        </div>
+                      </div>
+
+                      <br>
+                     
+                      <button class="w-100 btn btn-primary btn-lg" type="submit">Continua col pagamento</button>
+                      <br><br>
+                      <button class="w-100 btn btn-secondary btn-lg" type="reset">Ripristina</button>
+
+                    </form>
+                  </div>
+                </div>
+              </main>
+              </div>
+              </center>
+            <br>
+           
+		    
+        <br><font style="color: red;">*</font> Campo obbligatorio.
+    </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!--      --------      -->
+
+    <br>
+    
+    <div class="container">
+        <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="descrizione.html" class="nav-link px-2 text-muted">Descrizione della cittadina</a></li>
+            <li class="nav-item"><a href="galleria.html" class="nav-link px-2 text-muted">Galleria</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Prenotazione</a></li>
+            <li class="nav-item"><a href="contatti.html" class="nav-link px-2 text-muted">Contatti</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy;  2022 Bassan Niccolò. All rights reserved.</p>
+        <div class="text-center text-muted"><a href="">Privacy</a>    <a href="">Termini di Condizione</a>    <a href="">Supporto</a></div>
+        </footer>
+    </div>
+
+    <script>
+        function checkDatiPersonali() {
+            let isCheckTour1 = document.getElementById("tour1").checked;
+            let isCheckTour2 = document.getElementById("tour2").checked;
+            let isCheckTour3 = document.getElementById("tour3").checked;
+            let isCheckTour4 = document.getElementById("tour4").checked;
+            let isCheckTour5 = document.getElementById("tour5").checked;
+            let isCheckTour6 = document.getElementById("tour6").checked;
+            let isCheckTour7 = document.getElementById("tour7").checked;
+            if(!isCheckTour1 && !isCheckTour2 && !isCheckTour3 && !isCheckTour4 && !isCheckTour5 && !isCheckTour6 && !isCheckTour7) {
+                window.alert("Scegli almeno 1 tour!")
+                return false;
+            }  
+            
+            let isNum = document.getElementById("telefono").value;
+            if(isNaN(isNum)) {
+                window.alert("Inserisci un numero di telefono valido!") 
+                return false;
+            }
+            
+            let isNumCC = document.getElementById("cc-number").value;
+            if(isNaN(isNumCC)) {
+                window.alert("Inserisci un numero di carta valido!")
+                return false;
+            }
+
+            let isNumCVV = document.getElementById("cc-cvv").value;
+            if(isNaN(isNumCVV)) {
+                window.alert("Inserisci un numero di sicurezza valido!")
+                return false;
+            }
+            
+            return true;
+        }
+
+        function aggiornaCarrello() {
+            let isCheckTour1 = document.getElementById("tour1").checked;
+            let isCheckTour2 = document.getElementById("tour2").checked;
+            let isCheckTour3 = document.getElementById("tour3").checked;
+            let isCheckTour4 = document.getElementById("tour4").checked;
+            let isCheckTour5 = document.getElementById("tour5").checked;
+            let isCheckTour6 = document.getElementById("tour6").checked;
+            let isCheckTour7 = document.getElementById("tour7").checked;
+            let prezzoTot = 0;
+            let counter = 0;
+            if(isCheckTour1) {
+                prezzoTot += 70;
+                counter++;
+            }
+            if(isCheckTour2) {
+                prezzoTot += 40;
+                counter++;
+            }
+            if(isCheckTour3) {
+                prezzoTot += 30;
+                counter++;
+            }
+            if(isCheckTour4) {
+                prezzoTot += 45;
+                counter++;
+            }
+            if(isCheckTour5) {
+                prezzoTot += 20;
+                counter++;
+            }
+            if(isCheckTour6) {
+                prezzoTot += 120;
+                counter++;
+            }
+            if(isCheckTour7) {
+                prezzoTot += 15;
+                counter++;
+            }
+            console.log(prezzoTot);
+            document.getElementById("tota").innerHTML = prezzoTot + "€";
+            document.getElementById("carrelloNum").innerHTML = counter;
+        }
+
+        function validateDatiInseriti() {
+          var nome = document.getElementById("firstName").value;
+            if (nome == "") {
+              document.getElementById("errorNome").style.display = "block";
+              return false;
+            } else {
+              document.getElementById("errorNome").style.display = "none";
+              return true;
+            }
+        }
+        
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+          'use strict'
+
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.needs-validation')
+
+          // Loop over them and prevent submission
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+
+        // Mostra il bottone solo quando l'utente scorre in basso sulla pagina
+        window.onscroll = function() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.querySelector('.scroll-to-top').style.display = 'block';
+          } else {
+            document.querySelector('.scroll-to-top').style.display = 'none';
+          }
+        }
+
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

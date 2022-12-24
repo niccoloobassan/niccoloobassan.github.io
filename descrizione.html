@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Santorini</title>
+
+    <style>
+        
+      body {
+          /* background-image: url("images/939104.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          font-family: 'Baskervville';
+          font-size: 22px; */
+          background-color: rgb(255, 255, 255);
+      }
+
+      h1, h2 {
+          font-family: 'Baskervville', serif;
+          /* font-size: 60px; */
+          color: black;
+          text-align: center;
+          /*position: relative;
+          left: 100px; */
+
+      }
+
+      .container-fluid, .navbar-brand {
+          font-size: 25px;
+          font-family: 'Baskervville';
+          /* width: 100%; */
+          /* height: 100%; */
+          /* position: relative; */
+          /* left: 100px; */
+          /* top: 100px; */
+          /* margin: 0 auto; */
+          /* padding: 0; */
+          /* border: 1px solid black; */
+      }
+
+      .para {
+          font-family: 'Comfortaa', cursive;
+          font-size: 20px;
+          color: black;
+          text-align: center;
+          width: 80%;
+          /* position: relative;
+          left: 100px; */
+      }
+
+      .grassetto {
+          font-weight: bold;
+          font-size: 100%;
+      }
+
+      .elepunt {
+          list-style-type: none;
+
+      }
+
+      .container {
+          position: center;
+      }
+
+      .prova {
+            margin-top: 106px;
+      }
+
+      .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+          background-color: #333;
+          color: #fff;
+          border-radius: 50%;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .scroll-to-top:hover {
+          background-color: #555;
+        }
+
+        .scroll-to-top i {
+          font-size: 20px;
+        }
+
+    </style>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Comfortaa:wght@700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');      
+    </style>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top" id="navbar" aria-label="Sixth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Santorini - <img src="images/bandiera-grecia.jpeg" width="80" height="80" alt="Bandiera Grecia"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample06">
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Descrizione della cittadina</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galleria.html">Galleria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tourguidato.html">Prenotazione</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contatti.html">Contatti</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+
+  <div class="prova">
+    <h1>La meravigliosa città di Santorini</h1>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="container para">
+    <img src="images/42013.jpg" class="img-fluid" alt="Immagine di Santorini" width="750" height="500">
+    <br>
+    
+    <br>
+    
+
+    <div class="container">
+      <div class="row"> 
+          <li><font class="grassetto">Abitanti:</font> 16.000</li>
+          <li><font class="grassetto">Capoluogo:</font> Fira</li>
+          <li><font class="grassetto">Superficie:</font> 1.400 km²</li>
+          <li><font class="grassetto">Aeroporti:</font> Kratikos Aerolimenas Santorinis</li>
+          <li><font class="grassetto">Porti:</font> Athinios | Skala</li>
+      </div>
+    </div>
+
+    <br>
+    
+    Il <font class="grassetto">nome Santorini</font> ha origine durante l’egemonia della Serenissima Repubblica di Venezia. Deriva da Santa Irene, martire di Tessalonica (Salonicco). 
+    In realtà, i suoi abitanti continuano ancora oggi l’isola con il suo nome più antico, Θήρα, che in greco antico si pronunciava Thera e che in quello moderno è diventato Thira.
+    Santorini è l’isola dove meglio si può apprezzare la cucina greca, perché le materie prime locali sono di ottima qualità. 
+    Il piatto più famoso dell’isola, diffusissimo in tutta la Grecia, è la cosiddetta <font class="grassetto">fava di Santorini </font>, una purea molto simile all’hummus. 
+    Ciò che rende questo piatto unico al mondo è l’ingrediente principale che non è il legume verde che in Italia chiamata, appunto, fava. 
+    In realtà, si tratta di una differente varietà di legume, il Lathyrus Clymenum, presente sull’isola da oltre tre millenni.
+    Altro importante prodotto, inserito dall’Unione Europea nell’elenco dei prodotti di Denominazione di Origine Protetta (DOP) e Indicazione Geografica Protetta (IGP), 
+    è il <font class="grassetto">tomataki Santorinis</font>, il pomodorino di Santorini. Il suo aspetto è identico al ciliegino, variante del pomodoro di Pachino. 
+    Tra i vari piatti che vengono realizzati a Santorini con questo prezioso ortaggio, il più celebre è rappresentato dalle domatokeftedes, polpette fritte.
+    A Santorini si produce il <font class="grassetto">Vin Santo</font>, un vino da dessert con gradazione cromatica dal rosso chiaro al bianco, passando per il giallo paglierino. 
+    Per degustarlo e conoscere la sua storia, è possibile visitare diverse aziende vinicole. 
+    I paesaggi e il mare di Santorini l’hanno resa una delle destinazioni della Grecia più famose al mondo. 
+    In realtà, Santorini è un’isola ricca di arte e di cultura. Il più importante sito archeologico è la Città Preistorica di Akrotiri, 
+    nella parte meridionale dell’isola, distante pochi chilometri dalla celebre Red Beach. Gli scavi archeologici portarono alla luce un gran 
+    numero di manufatti recuperati durante gli scavi archeologici, oggi conservati nei <font class="grassetto">musei di Fira</font>. 
+    Altro importante sito archeologico è quello di <font class="grassetto">Fira Antica</font>. Si trova a un’altitudine di circa 400 m s.l.m, in una zona accessibile dalla località turistica di Kamari. 
+    Fu fondata nel IX secolo a.C. dai coloni Spartani giunti sull’isola guidati dal comandante Theras che diede il suo nome alla città (nome che in seguito assunse anche l’isola).
+        
+    
+  
+    <br>
+    <br>
+    <br>
+  
+
+    <h2>Le cittadine principali di Santorini</h2>
+
+  
+    
+    <br>
+    <br>
+
+    <img src="images/7503067.jpg" class="img-fluid" alt="Immagine di Santorini" width="750" height="500">
+
+    <br>
+    <br>
+    <br>
+
+    
+    Sebbene non sia particolarmente estesa, Santorini ha molti villaggi. <font class="grassetto">Il suo capoluogo è Fira</font>, costruito sul bordo della scogliera che delimita la caldera. 
+    Questa deliziosa cittadina è sempre piena di gente: la mattina quando si fa colazione ai tavoli dei bar di fronte ad un meraviglioso panorama, la sera quando si riempiono i tavoli dei ristoranti e 
+    delle taverne, la notte si affollano i discobar e le discoteche. Nel corso della giornata i turisti passeggiano per le strette vie del centro pieno di negozi, bazar e altre piccole attività commerciali.
+    <font class="grassetto">Firostefani</font> è il naturale prolungamento a nord di Fira: il confine che li divide è quasi impercettibile. 
+    Sono molto simili anche se Firostefani non deve sopportare i tanti turisti che affollano il centro del capoluogo. 
+    Neanche un paio di chilometri a nord si raggiunge <font class="grassetto">Imerovigli</font>, un paesino sviluppatosi sulla parte più alta della scogliera. 
+    Infatti, è chiamato il balcone di Santorini per gli splendidi panorami che regala. L’atmosfera è molto tranquilla: alcuni ristorantini di buon livello e boutique hotel di lusso.
+    Celebre in tutto il mondo per i suoi tramonti mozzafiato, <font class="grassetto">Oia è il villaggio più bello di Santorini</font>, 
+    uno dei luoghi più fotografati della Grecia. La sua infinita bellezza non si può descrivere con le parole. 
+    Oia si trova sul bordo della scogliera di Santorini, volgendo lo sguardo alla celebre caldera. 
+    Le sue piccole case luccicanti di bianco e di colori pastello si ammassano una accanto all’altra creando un dedalo vorticoso di stradine.
+    <font class="grassetto">Kamari e Perissa</font> sono le due località balneari di Santorini più turistiche perché qui si trovano hotel e appartamenti più a buon mercato. 
+    Sono adiacenti, ma separate da una montagna che non permette loro di toccarsi. Le loro spiagge sono tra le più frequentate dell’isola, 
+    divise dal resto della cittadina da un lungomare pieno di bar e taverne. Per architettura e urbanistica non offrono la tipica atmosfera dei villaggi cicladici pur rimanendo gradevole, 
+    né troppo tranquilla né troppo chiassosa.
+    In realtà, i villaggi fin qui descritti rappresentano la parte più conosciuta e turistica dell’isola.
+    Altri piccoli <font class="grassetto">paesini caratteristici di Santorini</font> consentono di vivere appieno il clima autentico e genuino della Grecia. 
+    Per scoprirli, prendi la mia guida completa e aggiornata di Santorini pubblicata nei migliori bookstore online.
+   
+
+    <br>
+    <br>
+    <br>
+
+    <h2>Santorini: Opinioni</h2>
+
+    <br>
+    <br>
+
+    <img src="images/fotosantorini.jpg" class="img-fluid" alt="Immagine di Santorini" width="750" height="500">
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row"> 
+            <li><font class="grassetto">Città e villaggi </font>- I villaggi di Santorini raccontano la bellezza delle Cicladi. In particolare, Oia è considerato uno dei villaggi più belli della Grecia.</li>
+            <li><font class="grassetto">Spiagge e mare </font>- Inutile negarlo: il mare di Santorini non incanta. Le acque sono limpide e cristalline, ma a causa della natura vulcanica dell’isola, spiagge e fondali sono di colore molto scuro e i colori del mare non sono vividi e brillanti come nelle altre isole della Grecia.</li>
+            <li><font class="grassetto">Diving e snorkeling </font>-  La presenza di molti diving center fa intuire l’alta qualità delle esperienze subacquee. Eppure, non ci sono molti spot per fare snorkeling.</li>
+            <li><font class="grassetto">Windsurf e kitesurf </font>- Negli ultimi anni si sta muovendo qualcosa: ci sono due centri organizzati. Inoltre, c’è anche la possibilità di praticare il SUP. Tuttavia, se andate in vacanza solo per surfare, meglio scegliere altre isole.</li>
+            <li><font class="grassetto">Attrazioni culturali </font>- Santorini è un’isola ricca di storia. C’è tanto da visitare. La Città Preistorica di Akrotiri è uno dei siti archeologici più interessanti della Grecia.</li>
+            <li><font class="grassetto">Paesaggi (panorami, foto…) </font>- Gran parte delle fotografie che promuovono la Grecia sono scattate a Santorini. I paesaggi e i panorami dell’isola sono unici al mondo.</li>
+            <li><font class="grassetto">Natura ed escursionismo (hiking, trekking…) </font>- Pur non essendo tanti, i sentieri sono interessanti. In particolare, quello che collega Fira a Oia.</li>
+            <li><font class="grassetto">Relax </font>- L’isola più famosa della Grecia attrae ogni anno un numero incredibile di turisti. Difficile trovare, dunque, un po’ di tranquillità. Il capoluogo è sempre gremito di gente, così come le spiagge. Alcuni lidi poco conosciuti concedono un po’ di tregua.</li>
+            <li><font class="grassetto">Vita notturna </font>- Ci sono sempre bar aperti, pronti a darti dei fantastici drink, oppure anche delle fantastiche discoteche per divertirsi con amici :) !</li>
+            <li><font class="grassetto">Adatta ai bambini </font>- Gran parte delle spiagge sono attrezzate, ma non ci sono servizi specifici per i più piccoli. Inoltre, girare con un passeggino tra i vicoli pieni di scalini di Fira e di altri villaggi diventa un’impresa.</li>
+            <li><font class="grassetto">Trasporti pubblici </font>- I pullman sono moderni e ben tenuti, e consentono di raggiungere molti punti dell’isola. Purtroppo, bisogna quasi sempre cambiare bus a Fira.</li>
+            <li><font class="grassetto">Prezzi economici </font>- Per non spendere troppo occorre visitate Santorini fuori stagione. Altrimenti, per dormire e mangiare bene e pagare il giusto, basta evitare le zone turistiche.</li>    
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+  </div>
+
+  <button class="scroll-to-top" onclick="scrollToTop()">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Descrizione della cittadina</a></li>
+        <li class="nav-item"><a href="galleria.html" class="nav-link px-2 text-muted">Galleria</a></li>
+        <li class="nav-item"><a href="tourguidato.html" class="nav-link px-2 text-muted">Prenotazione</a></li>
+        <li class="nav-item"><a href="contatti.html" class="nav-link px-2 text-muted">Contatti</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy;  2022 Bassan Niccolò. All rights reserved.</p>
+      <div class="text-center text-muted"><a href="">Privacy</a>    <a href="">Termini di Condizione</a>    <a href="">Supporto</a></div>
+    </footer>
+  </div>
+
+  <script>
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Mostra il bottone solo quando l'utente scorre in basso sulla pagina
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector('.scroll-to-top').style.display = 'block';
+      } else {
+        document.querySelector('.scroll-to-top').style.display = 'none';
+      }
+    }
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

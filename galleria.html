@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Santorini</title>
+
+    <style>
+        
+        body {
+          background-color: rgb(255, 255, 255);
+          width: 100%;
+          height: 100%;
+          margin: 0%;
+        }
+
+        h1, h3 {
+            font-family: 'Baskervville', serif;
+            color: black;
+            text-align: center;
+        }
+
+        .container-fluid, .navbar-brand {
+            font-size: 25px;
+            font-family: 'Baskervville';
+        }
+
+        .para {
+            font-family: 'Comfortaa', cursive;
+            font-size: 19px;
+            color: black;
+            text-align: center;
+            width: 40%;
+        }
+
+        .grassetto {
+            font-family: 'Fjalla One', sans-serif;
+        }
+
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+
+        .b-example-divider {
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .bordi {
+          border-radius: 5px 5px 0px 0px;
+        }
+
+        .prova {
+            margin-top: 106px;
+        }
+
+        .card-img-top {
+            height: 285px;
+            width: 450px; 
+        }
+
+        /* ------------   */
+
+        .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+          background-color: #333;
+          color: #fff;
+          border-radius: 50%;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .scroll-to-top:hover {
+          background-color: #555;
+        }
+
+        .scroll-to-top i {
+          font-size: 20px;
+        }
+      
+    </style>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Comfortaa:wght@700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');      
+    </style>
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top" aria-label="Sixth navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Santorini - <img src="images/bandiera-grecia.jpeg" width="80" height="80" alt="Bandiera Grecia"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarsExample06">
+              <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="descrizione.html">Descrizione della cittadina</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Galleria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tourguidato.html">Prenotazione</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contatti.html">Contatti</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+  </nav> 
+
+  <br>
+
+  <div class="prova">
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Santorini... Cosa si può visitare?</h1>
+            <p class="lead text-muted">Beh, innanzitutto la nostra isola è importante per le spiagge, una cosa favolosa, ideale per qualsiasi persona/famiglia con bambini! Qui di seguito vi lasciamo delle 
+            foto di alcune spiagge che potete visitare durante il vostro soggiorno. A chi non piace prendere il sole.. ci sono sempre musei e monumenti da visitare.
+            </p>
+            <p>
+            <a href="#" class="btn btn-primary my-2">Pagina 1</a>
+            <a href="galleria_2.html" class="btn btn-secondary my-2">Pagina 2</a>
+            </p>
+        </div>
+        </div>
+    </section>
+  </div>
+
+  <div class="album py-5 bg-light">
+      <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+          <div class="card shadow-sm h-100">
+              <img src="images/perissa-spiaggia.jpeg" alt="Spiaggia di Perissa" class="img-fluid bordi">
+
+              <div class="card-body">
+              <p class="card-text" id="continue" style="">Perissa è considerata la spiaggia più bella di Santorini. È lunga circa tre chilometri ed è nota come la spiaggia (nera) per il colore dei piccoli ciottoli e</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="spiaggiaPerissa()">Mostra Altro</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiSpiaggiaPerissa()">Riduci</button>
+                  </div>
+                  <small class="text-muted">1°Posto</small>
+              </div>
+              </div>
+          </div>
+          </div>
+          
+          <div class="col">
+          <div class="card shadow-sm h-100">
+              <img src="images/kamari-spiaggia.jpeg" alt="Spiaggia di Kamari" class="img-fluid bordi">  
+
+              <div class="card-body">
+              <p class="card-text"  id="continue2">La spiaggia di Kamari si trova lungo la costa sudorientale di Santorini. Si trova accanto a quella di Perissa, dalla quale è divisa da Mesa Vouno, un’enorme roccia che separa le due baie. 
+                Molto affollata, Kamari Beach è ricca di ristoranti che le</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="spiaggiaKamari()">Mostra Altro</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiSpiaggiaKamari()">Riduci</button>
+                  </div>
+                  <small class="text-muted">2°Posto</small>
+              </div>
+              </div>
+          </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+                <img src="images/baia-di-amoudi.jpeg" alt="Baia di Amoudi" class="img-fluid bordi">  
+
+                <div class="card-body">
+                <p class="card-text"  id="continue3">La costa occidentale di Santorini è occupata dalla caldera, con rocce a picco sul mare, senza spiagge. L’unica eccezione è rappresentata da una zona
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="baiaDiAmoudi()">Mostra Altro</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiBaiaDiAmoudi()">Riduci</button>
+                    </div>
+                    <small class="text-muted">3°Posto</small>
+                </div>
+                </div>
+          </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+                <img src="images/antica-thera.jpeg" alt="Antica Thera" class="img-fluid bordi">  
+
+                <div class="card-body">
+                <p class="card-text"  id="continue4">L’Antica Thera è un sito archeologico a Santorini.
+                  “Thera” è l’antico nome di Santorini. Nel Medioevo, l’isola venne chiamata dai veneziani “Santa Irini” che
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="anticaThera()">Mostra Altro</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiAnticaThera()">Riduci</button>
+                    </div>
+                    <small class="text-muted">4°Posto</small>
+                </div>
+                </div>
+          </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+                <img src="images/cinema-santorini.jpeg" alt="Cinema all'aperto" class="img-fluid bordi">  
+
+                <div class="card-body">
+                <p class="card-text"  id="continue5">Non importa se siete in vacanza con la famiglia o se state facendo una fuga romantica a Santorini, dovreste assolutamente andare a vedere un film al 
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="cinema()">Mostra Altro</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiCinema()">Riduci</button>
+                    </div>
+                    <small class="text-muted">5°Posto</small>
+                </div>
+                </div>
+          </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+                <img src="images/fira.jpeg" alt="Fira - Capitale" class="img-fluid bordi">  
+
+                <div class="card-body">
+                <p class="card-text"  id="continue6">Fira, la capitale di Santorini, è uno dei migliori luoghi da visitare sull’isola.
+                  È la città delle Cicladi perfetta, un vero scenario da cartolina.
+                  Passeggerete tra i vicoli della città e scoprirete degli splendidi punti panoramici sul mare e sulla caldera. 
+                  Vi innamorerete 
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="fira()">Mostra Altro</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiFira()">Riduci</button>
+                    </div>
+                    <small class="text-muted">6°Posto</small>
+                </div>
+                </div>
+          </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+                <img src="images/catamarano.jpeg" alt="Catamarano" class="img-fluid bordi">  
+
+                <div class="card-body">
+                <p class="card-text"  id="continue7">Goditi il tramonto di Santorini con questa crociera di 5 ore a bordo di un catamarano. 
+                  Gusta una grigliata per cena preparata al momento e accompagnata da vino e bevande analcoliche e nuota e fai snorkeling vicino alla spiaggia rossa e a quella bianca. Sali a bordo di un catamarano da 22 metri o da 24 metri e
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="catamarano()">Mostra Altro</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiCatamarano()">Riduci</button>
+                    </div>
+                    <small class="text-muted">7°Posto</small>
+                </div>
+                </div>
+          </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+                <img src="images/eros-beach.webp" alt="Spiaggia Eros" class="img-fluid bordi">  
+
+                <div class="card-body">
+                <p class="card-text"  id="continue8">Dedicata al dio greco dell'amore, Eros Beach è considerata uno dei luoghi più romantici dell'isola. 
+                  Questa spiaggia si trova sulla costa meridionale dell'isola ed è talmente vicina a Vlychada che le due 
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="spiaggiaEros()">Mostra Altro</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiSpiaggiaEros()">Riduci</button>
+                    </div>
+                    <small class="text-muted">8°Posto</small>
+                </div>
+                </div>
+          </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+                <img src="images/spiaggia-monolithos.jpeg" alt="Spiaggia Monolithos" class="img-fluid bordi">  
+
+                <div class="card-body">
+                <p class="card-text"  id="continue9">Situata accanto all'aeroporto, Monolithos è probabilmente la spiaggia più sabbiosa dell'isola, con un arenile di colore più chiaro rispetto ad altre parti di
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="spiaggiaMonolithos()">Mostra Altro</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="nascondiSpiaggiaMonolithos()">Riduci</button>
+                    </div>
+                    <small class="text-muted">9°Posto</small>
+                </div>
+                </div>
+          </div>
+          </div>
+
+
+      </div>
+      </div>
+  </div>
+
+  <br>
+
+  <button class="scroll-to-top" onclick="scrollToTop()">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+  
+  <div class="cerow py-lg-5 py-5 text-center container">
+    <div class="col-lg-6 col-md-8 mx-auto">
+        <a href="#" class="btn btn-primary my-2">Pagina 1</a>
+        <a href="galleria_2.html" class="btn btn-secondary my-2">Pagina 2</a>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="descrizione.html" class="nav-link px-2 text-muted">Descrizione della cittadina</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Galleria</a></li>
+        <li class="nav-item"><a href="tourguidato.html" class="nav-link px-2 text-muted">Prenotazione</a></li>
+        <li class="nav-item"><a href="contatti.html" class="nav-link px-2 text-muted">Contatti</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy;  2022 Bassan Niccolò. All rights reserved.</p>
+      <div class="text-center text-muted"><a href="">Privacy</a>    <a href="">Termini di Condizione</a>    <a href="">Supporto</a></div>
+    </footer>
+  </div>
+
+  <script>
+    
+    function spiaggiaPerissa() {
+      document.getElementById('continue').innerHTML = "Perissa è considerata la spiaggia più bella di Santorini. È lunga circa tre chilometri ed è nota come la spiaggia (nera) per il colore dei piccoli ciottoli e dalla sabbia vulcanica disseminata per tutta la baia. Ogni anno Perissa è la meta preferita dei viaggiatori, e non a caso intorno a essa si sono sviluppati tutta una serie di servizi volti a rendere la vacanza più confortevole: affitto di lettini, ombrelloni, sdraio, ristoranti, bar, locali, boutique e negozi, sono sorti intorno a questo lembo di sabbia bagnato dal mare.Perissa è molto amata soprattutto da un turismo giovane, che verso le 18 inizia ad affollare i bar sulla spiaggia dove suonano Dj fino a notte inoltrata. Ma è anche molto amata dalle famiglie, soprattutto per il mare cristallino che consente di godere di tutti i benefici dello stare al mare in totale relax.";
+    }
+
+    function nascondiSpiaggiaPerissa() {
+      document.getElementById('continue').innerHTML = 'Perissa è considerata la spiaggia più bella di Santorini. È lunga circa tre chilometri ed è nota come la spiaggia (nera) per il colore dei piccoli ciottoli e';
+    }
+
+    function spiaggiaKamari() {
+      document.getElementById('continue2').innerHTML = "La spiaggia di Kamari si trova lungo la costa sudorientale di Santorini. Si trova accanto a quella di Perissa, dalla quale è divisa da Mesa Vouno, un’enorme roccia che separa le due baie. Molto affollata, Kamari Beach è ricca di ristoranti che le sono sorti intorno e locali dove andarsi a divertire la sera dopo cena. Come altre spiagge dell’isola, anche qui troviamo la caratteristica distesa di sabbia nera vulcanica, fiore all’occhiello di Santorini. Kamari Beach, anche per l’enorme masso che la divide dalla vicina Perissa, è una delle spiagge più suggestive di Santorini, nonché una delle più frequentate.";
+    }
+
+    function nascondiSpiaggiaKamari() {
+      document.getElementById('continue2').innerHTML = 'La spiaggia di Kamari si trova lungo la costa sudorientale di Santorini. Si trova accanto a quella di Perissa, dalla quale è divisa da Mesa Vouno, un’enorme roccia che separa le due baie. Molto affollata, Kamari Beach è ricca di ristoranti che le';
+    }
+
+    function baiaDiAmoudi() {
+      document.getElementById('continue3').innerHTML = "La costa occidentale di Santorini è occupata dalla caldera, con rocce a picco sul mare, senza spiagge. L’unica eccezione è rappresentata da una zona costiera lungo l’estremità nord-occidentale, la graziosa Baia di Ammoudi. Ammoudi è in effetti il pittoresco porticciolo di Oia e si raggiunge dalla cittadina scendendo una ripida scalinata di 300 gradini. Se cercate una scarica d’adrenalina potete tuffarvi dalle rocce, altrimenti potete accontentarvi, si fa per dire, di una rilassante nuotata nelle sue acque cristalline. Con una fila di ottimi ristorantini di pesce allineati lungo il porto, Ammoudi è una meta ideale per una gustosa cena tipica; dal porto partono giornaliere escursioni in barca verso la vicina isola di Thirassia.";
+    }
+
+    function nascondiBaiaDiAmoudi() {
+      document.getElementById('continue3').innerHTML = 'La costa occidentale di Santorini è occupata dalla caldera, con rocce a picco sul mare, senza spiagge. L’unica eccezione è rappresentata da una zona';
+    }
+
+    function anticaThera() {
+      document.getElementById('continue4').innerHTML = "L’Antica Thera è un sito archeologico a Santorini. “Thera” è l’antico nome di Santorini. Nel Medioevo, l’isola venne chiamata dai veneziani “Santa Irini” che in seguito divenne “Santorini”. Situata sulla collina di Mesa Vouno, Thera fu fondata nel 9° secolo a.C. Durante la vostra visita, ammirerete molte vestigia del periodo Ellenico, Romano e Bizantino. Fate una passeggiata e scoprite i resti dei templi, l’agorà, il teatro e il ginnasio. Potrete anche godere anche di un bel panorama dei dintorni.";
+    }
+
+    function nascondiAnticaThera() {
+      document.getElementById('continue4').innerHTML = 'L’Antica Thera è un sito archeologico a Santorini. “Thera” è l’antico nome di Santorini. Nel Medioevo, l’isola venne chiamata dai veneziani “Santa Irini” che';
+    }
+
+    function cinema() {
+      document.getElementById('continue5').innerHTML = "Non importa se siete in vacanza con la famiglia o se state facendo una fuga romantica a Santorini, dovreste assolutamente andare a vedere un film al Cinema all’aperto. Il Cinema all’Aperto di Kamari, o Cinekamari, è un cinema all’aperto situato nel mezzo della foresta. È un posto davvero originale e grazioso in cui guardare un film. Da Maggio a Ottobre, è possibile vedere dei film in Inglese (sottotitolati in greco) ogni sera a partire dalle 21:30. Il costo è di 8€ a persona. C’è anche un bar sul luogo.";
+    }
+
+    function nascondiCinema() {
+      document.getElementById('continue5').innerHTML = 'Non importa se siete in vacanza con la famiglia o se state facendo una fuga romantica a Santorini, dovreste assolutamente andare a vedere un film al';
+    }
+
+    function fira() {
+      document.getElementById('continue6').innerHTML = "Fira, la capitale di Santorini, è uno dei migliori luoghi da visitare sull’isola. È la città delle Cicladi perfetta, un vero scenario da cartolina. Passeggerete tra i vicoli della città e scoprirete degli splendidi punti panoramici sul mare e sulla caldera. Vi innamorerete irrimediabilmente di questa isola (anche se molto spesso risulterà alquanto affollata!). Da Fira, seguite il bellissimo sentiero per raggiungere i villaggi di Firostefani (a soli 10 minuti a piedi) e Imerovigli (il punto più alto della caldera, a 30 minuti da Fira). Mettete in conto almeno 1 o 2 ore, poiché non potrete fare a meno di fermarvi ogni 2 metri per godervi i panorami e scattare delle foto! È anche possibile raggiungere a piedi il piccolo porto di Fira Skala. Sarà molto semplice scendere giù per i suoi 587 gradini, ma risalire sarà sicuramente più complicato, soprattutto sotto il sole! Se siete troppo stanchi per camminare, prendete la funivia di Santorini. Durante il vostro bel giro in funivia, potrete ammirare l’isola sotto un’altra prospettiva. Un biglietto di sola andata costa 6€. Potete anche decidere di fare un giro su un asino, ma ve lo sconsiglierei dato che gli animali vengono spesso maltrattati.";
+    }
+
+    function nascondiFira() {
+      document.getElementById('continue6').innerHTML = 'Fira, la capitale di Santorini, è uno dei migliori luoghi da visitare sull’isola. È la città delle Cicladi perfetta, un vero scenario da cartolina. Passeggerete tra i vicoli della città e scoprirete degli splendidi punti panoramici sul mare e sulla caldera. Vi innamorerete ';
+    }
+
+    function catamarano() {
+      document.getElementById('continue7').innerHTML = "Goditi il tramonto di Santorini con questa crociera di 5 ore a bordo di un catamarano. Gusta una grigliata per cena preparata al momento e accompagnata da vino e bevande analcoliche e nuota e fai snorkeling vicino alla spiaggia rossa e a quella bianca. Sali a bordo di un catamarano da 22 metri o da 24 metri e concediti una piacevole crociera al tramonto di 5 ore intorno all'Isola di Santorini nel Mar Egeo. Parti per un viaggio all'insegna della scoperta che ti condurrà prima alle sorgenti termali, poi alla spiaggia rossa e infine alla spiaggia bianca. Nuota, fai snorkeling e gusta un delizioso pasto a bordo. Inizia la tua avventura con un comodo prelievo in hotel e salpa in direzione della bellissima spiaggia rossa per nuotare e fare snorkeling per 30 minuti. Prosegui poi verso la suggestiva Spiaggia Bianca, accessibile solo via mare, per ulteriori nuotate e snorkeling all'ombra delle torreggianti scogliere bianche. A bordo del catamarano, potrai gustare un pasto al barbecue a base di insalate e carne alla griglia, oltre a opzioni vegetariane. Dopodiché, ti dirigerai all'interno della Caldera situata vicino al vulcano e caratterizzata da una forma a mezzaluna. Qui potrai goderti un'ultima nuotata nelle sorgenti termali, prima di fare ritorno a Oia e concludere la giornata ammirando uno spettacolare tramonto. Tutto questo al prezzo di 85 euro a persona.";
+    }
+
+    function nascondiCatamarano() {
+      document.getElementById('continue7').innerHTML = 'Goditi il tramonto di Santorini con questa crociera di 5 ore a bordo di un catamarano. Gusta una grigliata per cena preparata al momento e accompagnata da vino e bevande analcoliche e nuota e fai snorkeling vicino alla spiaggia rossa e a quella bianca. Sali a bordo di un catamarano da 22 metri o da 24 metri e';
+    }
+
+    function spiaggiaEros() {
+      document.getElementById('continue8').innerHTML = "Dedicata al dio greco dell'amore, Eros Beach è considerata uno dei luoghi più romantici dell'isola. Questa spiaggia si trova sulla costa meridionale dell'isola ed è talmente vicina a Vlychada che le due spiagge vengono spesso considerate un tutt'uno. Qui troverai la sabbia nera e ghiaiosa tipica di Santorini e ripide scogliere di pietra pomice. Dato che si trova alla fine di una strada sterrata, a circa 10 chilometri da Fira, e non è raggiungibile con i mezzi pubblici, Eros Beach è l'ideale per chi è alla ricerca di un rifugio tranquillo, fatto esclusivamente di sabbia e mare. Chi cerca un po' più di mondanità troverà invece un esclusivo beach club sulla vicina spiaggia di Vlychada.";
+    }
+
+    function nascondiSpiaggiaEros() {
+      document.getElementById('continue8').innerHTML = "Dedicata al dio greco dell'amore, Eros Beach è considerata uno dei luoghi più romantici dell'isola. Questa spiaggia si trova sulla costa meridionale dell'isola ed è talmente vicina a Vlychada che le due ";
+    }
+
+    function spiaggiaMonolithos() {
+      document.getElementById('continue9').innerHTML = "Situata accanto all'aeroporto, Monolithos è probabilmente la spiaggia più sabbiosa dell'isola, con un arenile di colore più chiaro rispetto ad altre parti di Santorini. Nonostante sia piuttosto vicina a Kamari, è un luogo relativamente tranquillo e molto frequentato dalle famiglie del posto, soprattutto per la pendenza graduale del fondale, ideale per i bambini più piccoli. All'estremità meridionale della spiaggia si trova un piccolo porto peschereccio con ristorantini tradizionali e hotel. Se ti piacciono gli sport acquatici estremi, e in particolare il kite surf, Monolithos è la spiaggia che fa per te.";
+    }
+
+    function nascondiSpiaggiaMonolithos() {
+      document.getElementById('continue9').innerHTML = "Situata accanto all'aeroporto, Monolithos è probabilmente la spiaggia più sabbiosa dell'isola, con un arenile di colore più chiaro rispetto ad altre parti di";
+    }
+
+    // ----------------
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Mostra il bottone solo quando l'utente scorre in basso sulla pagina
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector('.scroll-to-top').style.display = 'block';
+      } else {
+        document.querySelector('.scroll-to-top').style.display = 'none';
+      }
+    }
+
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>
